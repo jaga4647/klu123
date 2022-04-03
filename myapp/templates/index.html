@@ -1,0 +1,164 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Easy Vente</title>
+	<meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" >
+
+	<!-- EXTERNAL STYLES REFERENCE-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="header">
+		<div class="Navbar" id="Nav">
+	    	<div class="logo-img-new">
+				<img id="logo-new" src="{% static 'images/logo_1.png' %}">
+			</div>
+
+		    <div class="Navbar__Items" id="nav__toggler">
+			    	<div class="Navbar__Link">
+			      		<a class="a-header" href="index.html">HOME</a>
+			    	</div>
+			    	<div class="Navbar__Link">
+			      		<a class="a-header" href="/adminlogin/">ADMIN LOGIN</a>
+			    	</div>
+			    	<div class="Navbar__Link">
+			      		<a class="a-header" href="/login/">USER LOGIN</a>
+			    	</div>
+			    	<div class="Navbar__Link">
+			      		<a class="a-header" href="/signUpForm/">SIGNUP</a>
+			    	<div class="Navbar__Link">
+			      		<a class="a-header" href="contact_us.html">&nbsp ABOUT </a>
+			    	</div>
+			</div>
+	  	</div>
+  	</div>
+
+	<!-- END OF STICKY HEADER -->
+
+	<!-- PARALLAX LOADER-->
+
+	<div class="parallax_loader " id="home">
+		<div class="container-fluid bg-overlay">
+			<div class="row name_comp">
+				<div class="col-md-2 "></div>
+				<div class="col-md-8"><h1 class="display-1 g-font-weight--500 g-color--primary"><b>Easy Vente</b></h1></div>
+				<div class="col-md-2"></div>
+			</div>
+			<div class="row name_comp">
+				<div class="col-xs-12">
+					<h3 class="display-4 g-color--white">&nbsp &nbsp &nbsp &nbsp India's most famous car selling company with over 1 trusted users.</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- END OF PARALLAX LOADER-->
+
+	<!-- ABOUT CAR RENTERS-->
+
+	<div class="g-row-col--xs-10 about_sec" id="about">
+		
+			<div>
+				<h1 class="display-3 g-color--primary g-font-weight--300 para_content"><b>ABOUT US</b></h1>
+			</div>
+			<div class="g-color--dark-light g-font-family--Alegreya" style="font-size: 1.2em;" >
+				<p>Vehical managment system is an automation software for the transportation industry or an organization which owned a large number of vehicles.It is an organized code which provides management functions that permits corporation to get rid of or minimize the risks reelated to vehicles. it helps a business to boost up some outstading criteria includes the daily managementof vehicles,fuel and services management,Cost management etc </p>
+				<p> Happy Rentals has designed the most modern Vehicle Management Website to manage large vehicles. This system process and analyze every single data of your all Vehicles.It is a online based Software.It can be run from anywhere.</p>
+			</div>
+	</div>
+
+	<!-- END ABOUT -->
+
+	<!-- SLIDING CAR OPTIONS -->
+	<div class="car_options g-bg-color--something g-font-family--secondary" id="Cars">
+		<h3 class="display-3" style="padding: 0.5em;">Select Your choice</h3>
+	<div class="slide_car">
+		<div class="slide slide-left">
+			<div class="slide-content">
+				<a href="/login/"><button type="button" class="s-btn--scooter-bg">RENT NOW</button></a>
+			</div>
+			<img class="car_slide" src="{% static 'images/car1.jpeg' %}" alt="Car1">
+		</div>
+		<div class="slide slide-top">
+			<div class="slide-content">
+				<a href="/login/"><button type="button" class="s-btn--scooter-bg">RENT NOW</button></a>
+			</div>
+			<img class="car_slide" src="{% static 'images/car2.jpeg' %}" alt="Car2">
+		</div>
+		<div class="slide slide-right">
+			<div class="slide-content">
+				<a href="/login/"><button type="button" class="s-btn--scooter-bg">RENT NOW</button></a>
+			</div>
+			<img class="car_slide" src="{% static 'images/car3.jpeg' %}" alt="Car3">
+		</div>
+		<div class="slide slide-left">
+			<div class="slide-content">
+				<a href="/login/"><button type="button" class="s-btn--scooter-bg">RENT NOW</button></a>
+			</div>
+			<img class="car_slide" src="{% static 'images/car4.jpeg' %}" alt="Car4">
+		</div>
+		<div class="slide slide-bottom">
+			<div class="slide-content">
+				<a href="/login/"><button type="button" class="s-btn--scooter-bg">RENT NOW</button></a>
+			</div>
+			<img class="car_sli`de" src="{% static 'images/car5.jpeg' %}" alt="Car5">
+		</div>
+		<div class="slide slide-right">
+			<div class="slide-content">
+				<a href=/login/"><button type="button" class="s-btn--scooter-bg">RENT NOW</button></a>
+			</div>
+			<img class="car_slide" src="{% static 'images/car6.jpeg' %}" alt="Car6">
+		</div>
+	</div>
+	</div>
+	<!-- END SLIDEING CAR OPTIONS-->
+
+	<!-- FOOTER-->
+	<footer class="g-bg-color--dark-light g-color--white-opacity">
+		<div class="foot">
+			<div class="padd__needed">
+				<img id="logo" src="{% static 'images/logo_1.png' %}">
+			</div>
+			<div class="connectivity padd__needed">
+				<div class="connect">
+					<i class="fab fa-facebook-square"></i>
+					<a class="a-footer" href="#">FACEBOOK</a>
+				</div>
+				<div class="connect">
+					<i class="fab fa-linkedin"></i>
+					<a class="a-footer" href="#">LINKED IN</a>
+				</div>
+				<div class="connect">
+					<i class="fab fa-twitter-square"></i>
+					<a class="a-footer" href="#">TWITTER</a>
+				</div>
+				<div class="connect">
+					<i class="fab fa-instagram"></i>
+					<a class="a-footer" href="#">INSTAGRAM</a>
+				</div>
+			</div>
+			<div class="padd__needed">
+				<h5 class="g-color--primary">&copy Easy Vante</h5>
+			</div>
+		</div>
+	</footer>
+	<!--END OF FOOTER-->
+
+	<!-- LINK TO STYLESHEETS-->
+	<script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/toggler.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BUY CAR!!!</title>
+    <link rel="stylesheet" href="{% static 'css/book.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Montserrat:400,700" rel="stylesheet"> 
+</head>
+<body>
+    <div class="main-container">
+        <h1>BUY CAR</h1>
+        <div class="Characteristics">
+            <div class="box-reg">
+                <h3 class="line_title">Vehicle Features</h3>
+                <div class="row">
+                    <div class="image-class">
+                        <img src="{% static 'images/image5.jpg' %}" alt="Renault" class="img-responsive">
+                    </div>
+                    <div class="group-vehicleName">
+                        <h4>Renault</h4>
+                        <p>Renault Kiger</p>
+
+                    </div>
+                    <div class="Main-features pull-right">
+                        <ul class="car_detail contentList">
+                            <li>
+                                <span class="lbl ok_bg pull-right">6</span>
+                                <span class="sl_name">Passengers:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">Yes</span>
+                                <span class="sl_name">Air Conditioning:</span>
+                            </li>
+                            <li>
+                                <span class="lblok_b pull-right">Power</span>
+                                <span class="sl_name">Steering:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">Manual Transmission</span>
+                                <span class="sl_name">Transmission:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">Yes</span>
+                                <span class="sl_name">Power Windows:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">Yes</span>
+                                <span class="sl_name">Power Door Locks:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">Yes</span>
+                                <span class="sl_name">Airbags:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">YES</span>
+                                <span class="sl_name">Anti-Lock Brakes:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">4</span>
+                                <span class="sl_name">Doors:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">USB CD Player</span>
+                                <span class="sl_name">Radio:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">1</span>
+                                <span class="sl_name">Luggage:</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h1 id="currency">BUY FOR Rs 5.45 - 9.72 Lakhs Now!!!</h1>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="box-reg">
+            <h3 class="line_title">Buy The Car</h3>
+            <form action="../newVersion_usertable.html" method="POST">
+                <div class="row-2">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <span class="form-label">Name</span>
+                            <input class="form-control" type="text" placeholder="Enter your name">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <span class="form-label">Email</span>
+                            <input class="form-control" type="email" placeholder="Enter your email">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <span class="form-label">Phone</span>
+                    <input class="form-control" type="tel" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <span class="form-label">Lisence Id</span>
+                    <input class="form-control" type="text" placeholder="Enter your Lisence Id">
+                </div>
+                <div class="form-group">
+                    <span class="form-label">Address</span>
+                    <input class="form-control" type="text" placeholder="Enter your Address">
+                </div>
+
+                <div class="form-btn">
+                    <button class="submit-btn" onclick="message()"><span>Buy Now</span></button>
+                </div>
+            </form>   
+        </div>
+    </div>
+    <script src="./book.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Easy Vente</title>
+	<!-- DEFINING THE CHAR SET-->
+	<meta charset="utf-8">
+	<!--WEB FONTS REFERENCES-->
+	<!-- Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+
+	<!-- SETTING VIEWPORT-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS REFERENCE TO BOOTSTRAP -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" >
+	
+	<!-- EXTERNAL STYLES REFERENCE-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/newVersion_tables.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+<body class="g-bg-color--scooter">
+    <!-- STICKY HEADER -->
+    <div class="header">
+        <div class="Navbar" id="Nav">
+            <div class="logo-img-new">
+                <img id="logo-new" src="{% static 'images/logo_1.png' %}">
+            </div>
+            <div></div>
+            <div class="Navbar__Link Navbar__Link-toggle">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <div class="Navbar__Items">
+                    <div class="Navbar__Link">
+                        <a class="a-header" href="../index.html">HOME</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <a class="a-header" href="Admin Login/adminlogin.html">ADMIN LOGIN</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <a class="a-header" href="../login.html">USER LOGIN</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <a class="a-header" href="../signUpForm.html">SIGNUP</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <a class="a-header" href="../contact_us.html">CONTACT US</a>
+                    </div>
+              
+            </div>
+        </div>
+    </div>
+    <!-- END OF STICKY HEADER -->
+    
+    <!-- TWO BOXES -->
+    <div class="two_box"> 
+        <div class="small_box">
+            <a href="#cars_available">
+            <img class="car_image" src="{% static 'images/book_car1.jpg' %}">
+            <div>
+                <button type="button"  class="button_add g-color--white">BUY CAR</button>
+            </div>
+            </a>
+        </div>
+        <div class="small_box">
+            <a href="addCar.html">
+            <img class="car_image" src="{% static 'images/rent_car2.jpg' %}">
+            <div>
+                <button type="button" class="button_add g-color--white">Sell CAR</button>
+            </div>
+            </a>
+        </div>
+    </div>
+    
+    <!--END TWO BOXES -->
+    <!-- CARS AVAILABLE -->
+    <div class="">
+    <div>
+        <h1 class="heading g-color--dark g-font-family--primary" id="cars_available">Buy New cars</h1><br>
+    </div>
+    <table align="center" class="g-font-family--primary">
+        <tr>
+            <th>CAR PHOTO</th>
+            <th>CAR NAME</th>
+            <th>CAR Model</th>
+            <th>CAR Number</th>
+            <th>CAR PRIZE</th>
+        </tr>
+        <tr>
+            <td><img src="{% static 'images/image1.jpeg' %}" alt="Maruti suziki"></td>
+            <td class="Data"><a href="/bookcar1/" style="text-decoration: none; color: black;">Maruti Suzuki</a></td>
+            <td class="Data">Maruti Wagon R</td>
+            <td class="Data">CHO1A5031</td>
+            <td class="Data">Rs4.65-6.18 Lakhs</td>
+        </tr>
+             <td><img src="{% static 'images/image2.jpg' %}" alt="Hyundai"></td>
+            <td class="Data"><a href="/bookcar2/" style="text-decoration: none; color: black;">Hyundai</a></td>
+            <td class="Data">Hyundai i20</td>
+            <td class="Data">MH12E1433</td>
+            <td class="Data">Rs6.79 - 11.32 Lakh</td>
+        </tr>
+        <tr>
+            <td><img src="{% static 'images/image3.jpg' %}" alt="Tata"></td>
+            <td class="Data"><a href="/bookcar3/" style="text-decoration: none; color: black;">Tata</a></td>
+            <td class="Data">Tata Altroz</td>
+            <td class="Data">KA19P8488</td>
+            <td class="Data">Rs5.69 - 9.45 Lakhs</td>
+        </tr>
+        <tr>
+            <td><img src="{% static 'images/image4.jpg' %}"  alt="Maruti Suzuki"></td>
+            <td class="Data"><a href="/bookcar4/" style="text-decoration: none; color: black;">Maruti Suzuki</a></td>
+            <td class="Data">Maruti Swift</td>
+            <td class="Data">HR26DK8246</td>
+            <td class="Data">Rs5.73 - 8.41 Lakhs</td>
+        </tr>
+        <tr>
+            <td><img src="{% static 'images/image5.jpg' %}" alt="Renault"></td>
+            <td class="Data"><a href="/bookcar5/" style="text-decoration: none; color: black;">Renault</a></td>
+            <td class="Data">Renault Kiger</td>
+            <td class="Data">DL8CAC4194</td>
+            <td class="Data">Rs.5.45 - 9.72 Lakh*</td>
+        </tr>
+         <tr>
+            <td><img src="{% static 'images/image6.jpeg' %}" alt="Renault"></td>
+            <td class="Data"><a href="/bookcar6/" style="text-decoration: none; color: black;">Renault</a></td>
+            <td class="Data">Renault Duster</td>
+            <td class="Data">TN614TC0913</td>
+            <td class="Data">Rs.9.57 - 13.87 Lakhs</td>
+        </tr>
+         <tr>
+            <td><img src="{% static 'images/image7.jpg' %}" alt="Honda"></td>
+            <td class="Data"><a href="/bookcar7/" style="text-decoration: none; color: black;">Honda</a></td>
+            <td class="Data">Honda City 4th Genaration</td>
+            <td class="Data">HR26DO5551</td>
+            <td class="Data">Rs.9.29 - 9.99 lakhs</td>
+        </tr>
+         <tr>
+            <td><img src="{% static 'images/image8.jpg' %}" alt="Mahindra"></td>
+            <td class="Data"><a href="bookcar8.html" style="text-decoration: none; color: black;">Mahindra</a></td>
+            <td class="Data">Mahindra Scorpio</td>
+            <td class="Data">KA19P8488</td>
+            <td class="Data">Rs.11.99 - 16.59 Lakh*</td>
+        </tr>
+         <tr>
+            <td><img src="{% static 'images/image9.png' %}" alt="Mahindra"></td>
+            <td class="Data"><a href="/bookcar9/" style="text-decoration: none; color: black;">Mahindra</a></td>
+            <td class="Data">Mahindra Altruras G4</td>
+            <td class="Data">DL4CAF4943</td>
+            <td class="Data">Rs.28.73 - 31.73 Lakh*</td>
+        </tr>
+         <tr>
+            <td><img src="{% static 'images/image10.jpg' %}" alt="Ford"></td>
+            <td class="Data"><a href="/bookcar10/" style="text-decoration: none; color: black;">Ford</a></td>
+            <td class="Data">Ford EcoSport</td>
+            <td class="Data">MH20DV2366</td>
+            <td class="Data">Rs.7.99 - 11.49 lakhs </td>
+        </tr>
+    </table>
+    <br><br>
+    </div>
+    <!--END CARS AVAILABLE -->
+
+    <!-- HISTORY -->
+    <div class="">
+    <div>
+        <h1 class="heading g-color--dark g-font-family--primary" id="cars_available">BUY USED CARS</h1><br>
+    </div>
+    <table align="center" class="g-font-family--primary">
+        <tr>
+             <th>CAR PHOTO</th>
+            <th>CAR NAME</th>
+            <th>CAR Model</th>
+            <th>CAR Number</th>
+            <th>CAR PRIZE</th>
+        </tr>
+        <tr>
+            <td><img src="{% static 'images/usedimage1.jpg' %}" alt="Hyundai"></td>
+             <td class="Data"><a href="/usedbookcar1/" style="text-decoration: none; color: black;">Hyundai</a></td>
+            <td class="Data">Hyundai i20 sport plus BSIV</td>
+            <td class="Data">MH4CFA7852</td>
+            <td class="Data">RS 7.2 lakhs</td>
+        </tr>
+            <td><img src="{% static 'images/usedimage2.jpg' %}"  alt="Maruti Suziki"></td>
+             <td class="Data"><a href="/usedbookcar2/" style="text-decoration: none; color: black;">Maruti Suziki</a></td>
+            <td class="Data">Maruti 800 Ac</td>
+            <td class="Data">KA78P67536</td>
+            <td class="Data">RS 80000</td>
+        </tr>
+        <tr>
+            <td><img src="{% static 'images/usedimage3.jpg' %}" alt="Maruti Suziki"></td>
+             <td class="Data"><a href="/usedbookcar3/" style="text-decoration: none; color: black;">Maruti Suziki</a></td>
+            <td class="Data">Maruit Swift Vdi BsIII</td>
+            <td class="Data">HR51AA0361</td>
+            <td class="Data">RS 3.5 Lakhs</td>
+        </tr>
+        <tr>
+            <td><img src="{% static 'images/usedimage4.jpg' %}" alt="Nissan"></td>
+            <td class="Data"><a href="/usedbookcar4/" style="text-decoration: none; color: black;">Nissan</a></td>
+            <td class="Data">Nissan Micra AT</td>
+            <td class="Data">MH87PA7451</td>
+            <td class="Data">RS 3.6 Lakhs</td>
+        </tr>
+         <tr>
+            <td><img src="{% static 'images/usedimage5.jpg' %}" alt="Ford"></td>
+             <td class="Data"><a href="/usedbookcar5/" style="text-decoration: none; color: black;">Ford</a></td>
+            <td class="Data">Ford Aspire 1.2 TI-VCT Titanium</td>
+            <td class="Data">MP78PA0981</td>
+            <td class="Data">RS 5.5 Lakhs</td>
+        </tr>
+           <tr>
+           <td><img src="{% static 'images/usedimage6.jpg' %}" alt="Honda City"></td>
+           <td class="Data"><a href="/usedbookcar6/" style="text-decoration: none; color: black;">Honda</a></td>
+            <td class="Data">Honda city I DTEC V</td>
+            <td class="Data">HR260C5831</td>
+            <td class="Data">RS 6 LAKH</td>
+        </tr>
+           <tr>
+             <td><img src="{% static 'images/usedimage7.jpg' %}" alt="Renault"></td>
+              <td class="Data"><a href="/usedbookcar7/" style="text-decoration: none; color: black;">Renault</a></td>
+            <td class="Data">Renault Duster 110ps Deisel Rxz</td>
+            <td class="Data">AP16EF4233</td>
+            <td class="Data">RS 10 lakhs</td>
+        </tr>
+           <tr>
+            <td><img src="{% static 'images/usedimage8.jpg' %}" alt="Nissan"></td>
+             <td class="Data"><a href="/usedbookcar8/" style="text-decoration: none; color: black;">Nissan</a></td>
+            <td class="Data">Nissan Sunny Diesel XL</td>
+            <td class="Data">AP54PA7879</td>
+            <td class="Data">RS 3.9 lakhs</td>
+        </tr>
+           <tr>
+           <td><img src="{% static 'images/usedimage9.jpg' %}" alt="Maruti Suziki"></td>
+           <td class="Data"><a href="/usedbookcar9/" style="text-decoration: none; color: black;">Maruti Suziki</a></td>
+            <td class="Data">Maruti Alto Lxi</td>
+            <td class="Data">MP09AS7865</td>
+            <td class="Data">RS 1.8 lakhs</td>
+        </tr>
+           <tr>
+            <td><img src="{% static 'images/usedimage10.jpg' %}" alt="Mahindra"></td>
+             <td class="Data"><a href="/usedbookcar10/" style="text-decoration: none; color: black;">Mahindra</a></td>
+            <td class="Data">Mahindra Verito 1.5 D6 BSIV</td>
+            <td class="Data">MP91AP7689</td>
+            <td class="Data">RS 6.2 Lakh</td>
+        </tr>
+    </table>
+      <br><br>
+    </div>
+    <!--END HISTORY -->
+
+  
+    <!-- FOOTER-->
+    <footer class="g-bg-color--dark-light g-color--white-opacity">
+        <div class="foot">
+            <div class="padd__needed">
+                <img id="logo" src="{% static 'images/logo_1.png' %}">
+            </div>
+            <div class="connectivity padd__needed">
+                <div class="connect">
+                    <i class="fab fa-facebook-square"></i>
+                    <a class="a-footer" href="#">FACEBOOK</a>
+                </div>
+                <div class="connect">
+                    <i class="fab fa-linkedin"></i>
+                    <a class="a-footer" href="#">LINKED IN</a>
+                </div>
+                <div class="connect">
+                    <i class="fab fa-twitter-square"></i>
+                    <a class="a-footer" href="#">TWITTER</a>
+                </div>
+                <div class="connect">
+                    <i class="fab fa-instagram"></i>
+                    <a class="a-footer" href="#">INSTAGRAM</a>
+                </div>
+            </div>
+            <div class="padd__needed">
+                <h6 class="g-color--primary copyright">&copy EASY VENTE</h6>
+            </div>
+        </div>
+    </footer>
+    <!--END OF FOOTER-->
+
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

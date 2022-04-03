@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BUY CAR!!!</title>
+    <link rel="stylesheet" href="{% static 'css/book.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Montserrat:400,700" rel="stylesheet"> 
+</head>
+<body>
+    <div class="main-container">
+        <h1>BUY CAR</h1>
+        <div class="Characteristics">
+            <div class="box-reg">
+                <h3 class="line_title">Vehicle Features</h3>
+                <div class="row">
+                    <div class="image-class">
+                        <img src="{% static 'images/usedimage6.jpg' %}" alt="Honda" class="img-responsive">
+                    </div>
+                    <div class="group-vehicleName">
+                        <h4>Honda</h4>
+                        <p>Honda city I STEC V</p>
+
+                    </div>
+                    <div class="Main-features pull-right">
+                        <ul class="car_detail contentList">
+                            <li>
+                                <span class="lbl ok_bg pull-right">4</span>
+                                <span class="sl_name">Passengers:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">Yes</span>
+                                <span class="sl_name">Air Conditioning:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">Power</span>
+                                <span class="sl_name">Steering:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">Manual Transmission</span>
+                                <span class="sl_name">Transmission:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">Yes</span>
+                                <span class="sl_name">Power Windows:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">Yes</span>
+                                <span class="sl_name">Power Door Locks:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">Yes</span>
+                                <span class="sl_name">Airbags:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">NO</span>
+                                <span class="sl_name">Anti-Lock Brakes:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">4</span>
+                                <span class="sl_name">Doors:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">USB CD Player</span>
+                                <span class="sl_name">Radio:</span>
+                            </li>
+                            <li>
+                                <span class="lbl ok_bg pull-right">1</span>
+                                <span class="sl_name">Luggage:</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h1 id="currency">BUY FOR Rs 6 Lakhs Now!!!</h1>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="box-reg">
+            <h3 class="line_title">Seller details</h3>
+            <form action="../newVersion_usertable.html" method="POST">
+               <p style="text-align: left"> Name : Manikanta </p><br><br>
+               <p style="text-align: left"> Email: mani@gmail.com</p><br><br>
+                <P style="text-align: left"> Phone: 9874561237</p><br><br>
+                <p style="text-align: left">Vehicle number: HR260C5831</p><br><br>
+                <P style="text-align: left"> Address: Vasavi Towers flat 451, Netaji Road, Behind Aravinda High School ,517537 </p><br><br>
+            
+                
+
+                <div class="form-btn">
+                    <button class="submit-btn" onclick="message()"><span>CALL TO THE SELLER</span></button>
+                </div>
+            </form>   
+        </div>
+    </div>
+    <script src="./book.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>

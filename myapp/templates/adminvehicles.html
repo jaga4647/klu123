@@ -1,0 +1,838 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <title>EASY VENTE</title>
+</head>
+<style>
+html{
+ background-image: url("homeimage.jpeg");
+}
+
+section{
+  background: url(homeimage.jpeg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+body{
+  display: grid;
+  height: 100%;
+  width:100%;
+  place-items: center;
+  background: #f2f2f2;
+}
+.slider{
+  max-width: 1200px;
+  display: flex;
+}
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+}
+.slider .card .img{
+  height: 200px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button{
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: black;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #808080;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+footer{
+  position:relative;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form .msgForm{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form .msgForm:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+ .container {
+  padding: 10px 15px;
+}
+.skyblue {
+  background-color: #22c8ff;
+}
+
+.carousel-indicators {
+  bottom: 0;
+}
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-item {
+  min-height: 350px; 
+  height: 100%;
+  width:100%; 
+}
+.carousel-caption h3,
+.carousel .icon-container,
+.carousel-caption button {
+  background-color: #09c;
+}
+.carousel-caption h3 {
+  padding: .5em;
+}
+.carousel .icon-container {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 25px;
+  padding: 1em;
+  text-align: center;
+  border-radius: 50%;
+}
+.carousel-caption button {
+  border-color: #00bfff;
+  margin-top: 1em; 
+}
+
+/* Animation delays */
+.carousel-caption h3:first-child {
+  animation-delay: 1s;
+}
+.carousel-caption h3:nth-child(2) {
+  animation-delay: 2s;
+}
+.carousel-caption button {
+  animation-delay: 3s;
+}
+
+h1{
+  text-align: center;  
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.p {
+  padding-top: 125px;
+  text-align: center;
+}
+
+.p a {
+  text-decoration: underline;
+}
+ 
+.checked {
+  color: orange;
+}  
+</style>
+<nav>
+    
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Easy Vente</label>
+      <ul>
+        <li><a class="active" href="main.html">Vehicles</a></li>
+        <li><a href="aboutus.html">Profile</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+</nav>  
+<body>  
+
+   
+  <div class="container">
+  <div class="col-lg-6 col-md-8 mx-auto">
+       
+        <h1 class="fw-light" style="color:black;">Welcome to Easy Vente</h1>
+        
+      </div>
+</div>
+<div class="slider owl-carousel">
+<div class="card">
+<div class="img">
+<img src="{% static 'images/image1.jpeg' %}" alt="Maruti suziki"></div>
+<div class="content">
+<div class="title">Maruti suziki</div>
+<div class="sub-title">Maruti Wagon R</div>
+<p>vehicle number: CHO1A5031</p>
+<p>cost: Rs4.65-6.18 Lakhs</p> 
+<div class='btn'>
+    <button style='margin-right:55px'>veiw</button>
+     <button style='margin-bottom: :55px'>Delete</button>
+    <button style='margin-left:55px'>Update</button>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="img">
+<img src="{% static 'images/image2.jpg' %}" alt="Hyundai"></div>
+<div class="content">
+<div class="title">Hyundai</div>
+<div class="sub-title">Hyundai i20</div>
+<p>vehicle number: MH12E1433</p>
+<p>cost: Rs6.79 - 11.32 Lakhs </p>
+<div class="btn">
+            <button style='margin-right:55px'>veiw</button> 
+            <button style='margin-bottom:55px'>Delete</button> 
+            <button style='margin-left:55px'>Update</button> 
+</div>
+</div>
+</div>
+<div class="card">
+        <div class="img">
+<img src="{% static 'images/image3.jpg' %}" alt="Tata"></div>
+<div class="content">
+          <div class="title">Tata</div>
+<div class="sub-title">Tata Altroze</div>
+<p>vehical number: KA19P8488</p>
+<p>cost: Rs5.69 - 9.45 Lakhs </p>
+<div class="btn">
+            <button style='margin-right:55px'>Veiw</button>
+            <button style='margin-bottom:55px'>Delete</button>
+            <button style='margin-left:55px'>Update</button>
+
+</div>
+</div>
+</div>
+<div class="card">
+        <div class="img">
+<img src="{% static 'images/image4.jpg' %}" alt="Maruti Suziki"></div>
+<div class="content">
+          <div class="title">Maruti Suzuki</div>
+<div class="sub-title">Maruti Swift</div>
+<p>vehical number:HR26DK8246 </p>
+<p>cost: Rs5.73 - 8.41 Lakhs </p>
+<div class="btn">
+            <button style='margin-right:55px'>Veiw</button>
+            <button style='margin-bottom:55px'>Delete</button>
+            <button style='margin-left:55px'>Update</button>
+
+</div>
+</div>
+</div>
+<div class="card">
+        <div class="img">
+<img src="{% static 'images/image8.jpg' %}" alt="Mahindra"></div>
+<div class="content">
+          <div class="title">Mahindra</div>
+<div class="sub-title">Mahindra Scorpio</div>
+<p>vehicle numbe: DL4CA4943</p>
+<p>cost: RS 28.73 - 31.73 LakhS </p>
+<div class="btn">
+             <button style='margin-right:55px'>Veiw</button>
+            <button style='margin-bottom:55px'>Delete</button>
+            <button style='margin-left:55px'>Update</button>
+</div>
+</div>
+</div>
+<div class="card">
+        <div class="img">
+<img src="{% static 'images/image5.jpg' %}" alt="Renault"></div>
+<div class="content">
+          <div class="title">Renault</div>
+<div class="sub-title">Renault Kiger</div>
+<p>vehicle numbe: DL8CAC4194</p>
+<p>cost:Rs.5.45 - 9.72 Lakhs </p>
+<div class="btn">
+             <button style='margin-right:55px'>Veiw</button>
+            <button style='margin-bottom:55px'>Delete</button>
+            <button style='margin-left:55px'>Update</button>
+</div>
+</div>
+</div>
+<div class="card">
+        <div class="img">
+<img src="{% static 'images/image7.jpg' %}" alt="Honda"></div>
+<div class="content">
+          <div class="title">Honda</div>
+<div class="sub-title">Honda City 4th Genaration</div>
+<p>vehical number: HR26DO5551</p>
+<p>cost:Rs.9.29 - 9.99 lakhs</p>
+<div class="btn">
+         <button style='margin-right:55px'>Veiw</button>
+            <button style='margin-bottom:55px'>Delete</button>
+            <button style='margin-left:55px'>Update</button>
+</div>
+</div>
+</div>
+</div>
+<div class="slider owl-carousel">
+<div class="card">
+<div class="img">
+<img src="{% static 'images/image6.jpeg' %}" alt="Renault"></div>
+<div class="content">
+<div class="title">Renault</div>
+<div class="sub-title">Renault Duster</div>
+<p>vehicle number: TN614TC0913 </p>
+<p>cost: Rs.9.57 - 13.87 Lakhs</p>
+<div class="btn">
+            <button style='margin-right:55px'>Veiw</button>
+            <button style='margin-bottom:55px'>Delete</button>
+            <button style='margin-left:55px'>Update</button>
+</div>
+</div>
+</div>
+<div class="card">
+        <div class="img">
+<img src="{% static 'images/image9.png' %}" alt="Mahindra"></div>
+<div class="content">
+          <div class="title">Mahindra</div>
+<div class="sub-title">Mahindra Altruras G4</div>
+<p>vehicle number: DL4CAF4943</p>
+<p>cost: Rs.28.73 - 31.73 Lakh*</p>
+<div class="btn">
+            <button style='margin-right:55px'>Veiw</button>
+            <button style='margin-bottom:55px'>Delete</button>
+            <button style='margin-left:55px'>Update</button>
+           
+</div>
+</div>
+</div>
+<div class="card">
+        <div class="img">
+<img src="{% static 'images/image10.jpg' %}" alt="Ford"></div>
+<div class="content">
+          <div class="title">Ford</div>
+<div class="sub-title">Ford EcoSport</div>
+<p>vehicle number: MH20DV2366</p>
+<p>cost: Rs.7.99 - 11.49 lakhs </p>
+<div class="btn">
+     <button style='margin-right:55px'>Veiw</button>
+     <button style='margin-bottom:55px'>Delete</button>
+     <button style='margin-left:55px'>Update</button>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="img">
+<img src="{% static 'images/usedimage1.jpg' %}" alt="Hyndai"></div>
+<div class="content">
+          <div class="title">Hyundai</div>
+<div class="sub-title">Hyundai i20 sport plus BSIV</div>
+<p>vehicle number: MH4CFA7852 </p>
+<p>cost: RS 7.2 lakhs</p>
+<div class="btn">
+      <button style='margin-right:55px'>Veiw</button>
+     <button style='margin-bottom:55px'>Delete</button>
+     <button style='margin-left:55px'>Update</button>
+ </div>
+</div>
+</div>
+<div class="card">
+        <div class="img">
+<img src="{% static 'images/usedimage2.jpg' %}" alt="Maruti suziki"></div>
+<div class="content">
+          <div class="title">Maruti Suziki</div>
+<div class="sub-title">Maruti 800 Ac</div>
+<p>vehicle number:KA78P67536</p>
+<p>cost: 80000</p>
+<div class="btn">
+     <button style='margin-right:55px'>Veiw</button>
+     <button style='margin-bottom:55px'>Delete</button>
+     <button style='margin-left:55px'>Update</button>
+</div>
+</div>
+</div>
+<div class="card">
+        <div class="img">
+<img src="{% static 'images/usedimage5.jpg' %}" alt="ford"></div>
+<div class="content">
+          <div class="title">Ford</div>
+<div class="sub-title">Ford Aspire 1.2 TI-VCT Titanium</div>
+<p>vehicle number: MP78PA0981</p>
+<p>cost: RS 5.5 Lakhs </p>
+<div class="btn">
+     <button style='margin-right:55px'>Veiw</button>
+     <button style='margin-bottom:55px'>Delete</button>
+     <button style='margin-left:55px'>Update</button>
+</div>
+</div>
+</div>
+<div class="card">
+        <div class="img">
+<img src="{% static 'images/usedimage3.jpg' %}" alt="maruti suziki"></div>
+<div class="content">
+          <div class="title">Maruti Suziki</div>
+<div class="sub-title">Maruit Swift Vdi BsIII</div>
+<p>vehical number: HR51AA0361</p>
+<p>cost: RS 3.5 Lakhs</p>
+<div class="btn">
+     <button style='margin-right:55px'>Veiw</button>
+     <button style='margin-bottom:55px'>Delete</button>
+     <button style='margin-left:55px'>Update</button>
+</div>
+</div>
+</div>
+</div>
+<div class="slider owl-carousel">
+<div class="card">
+ <div class="img">
+<img src="{% static 'images/usedimage4.jpg' %}" alt="nissan"></div>
+<div class="content">
+<div class="title">Nissan</div>
+<div class="sub-title">Nissan Micra AT</div>
+<p>vehicle number: MH87PA7451</p>
+<p>cost: RS 3.6 Lakhs </p>
+<div class="btn">
+     <button style='margin-right:55px'>Veiw</button>
+     <button style='margin-bottom:55px'>Delete</button>
+     <button style='margin-left:55px'>Update</button>
+</div>
+</div>
+</div>
+<div class="card">
+ <div class="img">
+<img src="{% static 'images/usedimage6.jpg' %}" alt="honda king"></div>
+<div class="content">
+          <div class="title">Honda City</div>
+<div class="sub-title">Honda city I DTEC V</div>
+<p>Vehicle number: HR260C5831</p>
+<p>cost: RS 6 LAKH</p>
+<div class="btn">
+     <button style='margin-right:55px'>Veiw</button>
+     <button style='margin-bottom:55px'>Delete</button>
+     <button style='margin-left:55px'>Update</button>
+</div>
+</div>
+</div>
+<div class="card">
+        <div class="img">
+<img src="{% static 'images/usedimage7.jpg' %}" alt="Renault"></div>
+<div class="content">
+          <div class="title">Renault</div>
+<div class="sub-title">Renault Duster 110ps Deisel Rxz</div>
+<p>vehicle numebr:AP16EF4233</p>
+<p>cost: RS 10 lakhs</p>
+<div class="btn">
+      <button style='margin-right:55px'>Veiw</button>
+     <button style='margin-bottom:55px'>Delete</button>
+     <button style='margin-left:55px'>Update</button>
+</div>
+</div>
+</div>
+<div class="card">
+        <div class="img">
+<img src="{% static 'images/usedimage8.jpg' %}" alt="nissan"></div>
+<div class="content">
+          <div class="title">Nissan</div>
+<div class="sub-title">Nissan Sunny Diesel XL</div>
+<p>vehicle number: AP54PA7879</p>
+<p>cost:RS 3.9 lakhs</p>
+<div class="btn">
+     <button style='margin-right:55px'>Veiw</button>
+     <button style='margin-bottom:55px'>Delete</button>
+     <button style='margin-left:55px'>Update</button>
+</div>
+</div>
+</div>
+<div class="card">
+        <div class="img">
+<img src="{% static 'images/usedimage9.jpg' %}" alt="maruti suziki"></div>
+<div class="content">
+          <div class="title">Maruti Suziki</div>
+<div class="sub-title">Maruti Alto Lxi</div>
+<p>vehicle number: MP09AS7865</p>
+<p>cost: RS 1.8 lakhs </p>
+<div class="btn">
+  <button style='margin-right:55px'>Veiw</button>
+     <button style='margin-bottom:55px'>Delete</button>
+     <button style='margin-left:55px'>Update</button>
+ </div>
+</div>
+</div>
+<div class="card">
+        <div class="img">
+<img src="{% static 'images/usedimage10.jpg' %}" alt="mahindra"></div>
+<div class="content">
+          <div class="title">Mahindra</div>
+<div class="sub-title">Mahindra Verito 1.5 D6 BSIV</div>
+<p>Vehicle number: MP91AP7689</p>
+<p>RS 6.2 Lakh</p>
+<div class="btn">
+      <button style='margin-right:55px'>Veiw</button>
+     <button style='margin-bottom:55px'>Delete</button>
+     <button style='margin-left:55px'>Update</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+      $(".slider").owlCarousel({
+        loop: false,
+        autoplay: false,
+        autoplayTimeout: 2000, //2000ms = 2s;
+        autoplayHoverPause: false,
+      });
+</script>
+<footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>
+About us</h2>
+<div class="content">
+<p>Easy vente has designed the most modern Vehicle Management Website to manage large vehicles. This system process and analyze every single data of your all Vehicles.It is a online based Software.It can be run from anywhere</p>
+<div class="social">
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-youtube"></span></a>
+              <a href="h#"><span class="fab fa-linkedin"></span></a>
+	          <a href="#"><span class="fab fa-telegram"></span></a>
+
+</div>
+</div>
+</div>
+<div class="center box">
+<h2>Address</h2>
+<div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Benz Circle, Vijayawada</span>
+            </div>
+<div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+91 8688671389</span>
+            </div>
+<div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">Easyvente123@gmail.com</span>
+            </div>
+</div>
+</div>
+<div class="right box">
+<h2>Contact us</h2>
+<div class="content">
+<form action="#">
+<div class="email">
+<div class="text">Email *</div>
+<input type="email" required></div>
+<div class="msg">
+<div class="text">Message *</div>
+<input type="message" required>
+<changeit id=".msgForm" rows="2" cols="25" required></changeit> 
+<br/>
+<div class="btn">
+<button type="submit" class="btn btn-success" >Send</button>
+ </div>
+<div class="bottom">
+<center >
+          <span class="credit">Created By <a href="#">Easy Vente</a> | </span>
+          <span class="far fa-copyright"></span> 2021 All rights reserved. </span>
+</center>
+</div>
+</footer>
+</body>
+</html>
